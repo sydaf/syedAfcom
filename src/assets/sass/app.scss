@@ -1,0 +1,10 @@
+.icon-spin-enter-active,
+.icon-spin-leave-active {
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.icon-spin-enter,
+.icon-spin-leave-to {
+    transform: rotate(360deg);
+    transform-origin: center;
+}
