@@ -1,0 +1,58 @@
+.light-mode {
+    background-color: $white;
+
+    //==== General ====//
+    p {
+        color: $black;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $black;
+    }
+
+    .dark-btn {
+        color: $black;
+    }
+
+    .gap-color {
+        background-color: $black;
+    }
+
+    path {
+        transition: all 250 ease-in-out;
+        fill: $black;
+    }
+
+    .bg-shapes path {
+        fill: rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .mode-toggle-btn {
+        font-family: $body;
+        color: $black;
+    }
+
+    //==== Introduction ====//
+    .panel-intro {
+        background-color: $orange;
+
+        .button-primary {
+            background-color: $black;
+            color: $orange;
+        }
+    }
+
+    .panel-about {
+        background-color: $teal;
+    }
+
+    .panel-mystery {
+        background-color: $energy-lime;
+    }
+
+}

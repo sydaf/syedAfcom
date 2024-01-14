@@ -1,0 +1,43 @@
+.dark-mode {
+    background-color: $black;
+
+    p {
+        color: $white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+
+    .dark-btn {
+        color: $white;
+    }
+
+    .gap-color {
+        background-color: $white;
+    }
+
+    path {
+        transition: all 250 ease-in-out;
+        fill: $white;
+    }
+
+    .bg-shapes path{
+        fill: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .mode-toggle-btn {
+        font-family: $body;
+        color: $white;
+    }
+
+    //==== Panel colors ====//
+    .panel-intro, .panel-about, .panel-mystery {
+        background-color: $black;
+
+        .button-primary {
+            background-color: $orange;
+            color: $black;
+        }
+    }
+}

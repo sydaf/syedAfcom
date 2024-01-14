@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@700&display=swap');
+
+@font-face {
+    font-family: BDLifeless-bold;
+    src: url(../fonts/BDLifelessGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: BDLifeless-regular;
+    src: url(../fonts/BDLifelessGrotesk-Regular.ttf);
+}
+
+// Colors
+$orange: #F34F29;
+$light-orange: #FF8468;
+$energy-lime: #FAFF00;
+$light-lime: #DFFF84;
+$teal: #55CEAA;
+$dark-teal: #49AB6B;
+$sky-blue: #1492E7;
+$purple: #BA62FF;
+$light-purple: #C67EFF;
+$white: #F0F0F0;
+$black: #171717;
+
+// Font-face
+$heading: 'Anybody', sans-serif;
+$body: 'BDLifeless-regular';
+$body-bold: 'BDLifeless-bold';
+
+.panel {
+    border-radius: 1.563em;
+    padding: 1.25em;
+    overflow: hidden;
+}
+
+.round-custom {
+    border-radius: 1.563em;
+}
+
+.button-primary {
+    font-family: $heading;
+}
+
+svg {
+    margin-bottom: 0.188em;
+}
