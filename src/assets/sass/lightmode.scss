@@ -2,7 +2,7 @@
     background-color: $white;
 
     //==== General ====//
-    p {
+    p, a {
         color: $black;
     }
 
@@ -37,7 +37,7 @@
         color: $black;
     }
 
-    //==== Introduction ====//
+    //==== Panels ====//
     .panel-intro {
         background-color: $orange;
 
@@ -54,5 +54,16 @@
     .panel-mystery {
         background-color: $energy-lime;
     }
+    
+    .panel-contact {
+        background-color: $sky-blue;
+    }
 
+    .panel-stack {
+        background-color: $white;
+    }
+
+    .panel-exp {
+        background-color: $purple;
+    }
 }

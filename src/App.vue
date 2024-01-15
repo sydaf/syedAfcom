@@ -8,6 +8,12 @@ import ArrowIcon from './components/svg/Arrow.vue';
 import StarBig from './components/svg/StarBig.vue';
 import StarSmall from './components/svg/StarSmall.vue';
 import QuestionMark from './components/svg/QuestionMark.vue';
+import PhoneIcon from './components/svg/Phone.vue';
+import EnvelopIcon from './components/svg/Envelop.vue';
+import DiscordIcon from './components/svg/Discord.vue';
+import GithubIcon from './components/svg/Github.vue';
+import LinkedinIcon from './components/svg/Linkedin.vue';
+import GlobeShape from './components/svg/GlobeShape.vue';
 
 let dark = ref(false);
 
@@ -42,7 +48,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Content -->
       <div class="gap-color p-0.5 grid md:grid-rows-8 md:grid-cols-10 gap-0.5">
-        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none" src="./assets/img/sydimg.webp"
+        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full " src="./assets/img/sydimg.webp"
           alt="A picture of this creature of a developer">
 
         <div
@@ -64,7 +70,7 @@ const currentYear = ref(new Date().getFullYear());
           <div class="absolute top-2 right-2">
             <ArrowIcon />
           </div>
-          <div class="absolute right-0">
+          <div class="absolute right-24 top-0">
             <StarSmall />
           </div>
           <div class="absolute right-0">
@@ -75,12 +81,46 @@ const currentYear = ref(new Date().getFullYear());
         <div class="panel panel-mystery md:row-span-2 md:col-span-2 md:order-7 order-4 flex justify-center items-center">
           <QuestionMark/>
         </div>
-        <div class="panel md:row-span-3 md:col-span-3 md:order-9 order-5">contact</div>
-        <div class="panel md:row-span-1 md:col-span-3 md:order-10 order-6">tech stack</div>
-        <div class="panel md:row-span-2 md:col-span-3 md:order-11 order-7">experience</div>
+
+        <div class="panel panel-contact md:row-span-3 md:col-span-3 md:order-9 order-5 flex flex-col gap-2">
+          <h2 class="text-xl">Contact.</h2>
+          <div class="flex items-center gap-2">
+            <PhoneIcon/>
+            <a href="#">016-234 5965</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <EnvelopIcon/>
+            <a href="#">syedafinquiries</a>
+          </div>
+          <h2 class="text-xl">Socials.</h2>
+          <div class="flex items-center gap-3">
+            <a href="#"><GithubIcon/></a>
+            <a href="#"><DiscordIcon/></a>
+            <a href="#"><LinkedinIcon/></a>
+          </div>
+        </div>
+        
+        <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6">
+          Tech stack
+        </div>
+
+        <div class="panel panel-exp md:row-span-2 md:col-span-3 md:order-11 order-7 flex flex-col gap-2 relative">
+          <h2 class="text-xl">Experience.</h2>
+          <div class="first-exp">
+            <p>OSKY Interactive</p>
+            <p class="opacity-60">2023 - Present</p>
+          </div>
+          <div class="second-exp">
+            <p>Sfera Digital Solutions</p>
+            <p class="opacity-60">2020 - 2022</p>
+          </div>
+          <div class="absolute right-0 bottom-0">
+            <GlobeShape />
+          </div>
+        </div>
 
         <!-- Projects -->
-        <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8">prjt</div>
+        <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8"></div>
         <div class="panel md:row-span-2 md:col-span-4 md:order-4 order-9">project1</div>
         <div class="panel md:row-span-2 md:col-span-4 md:order-5 order-10">project2</div>
         <div class="panel md:row-span-2 md:col-span-4 md:order-8 order-11">project3</div>
@@ -89,7 +129,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Footer -->
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 ">
-        <p class="max-w-[225px]">© {{ currentYear }} · Crafted with ❤️ using Tailwind and Vue.js</p>
+        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using Tailwind and Vue.js</p>
       </div>
 
     </div>

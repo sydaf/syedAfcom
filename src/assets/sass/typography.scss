@@ -15,3 +15,13 @@ p {
 .p-bold {
     font-family: $body-bold;
 }
+
+a {
+    font-family: $body;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

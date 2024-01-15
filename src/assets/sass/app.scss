@@ -3,6 +3,10 @@
 @import "lightmode.scss";
 @import "darkmode.scss";
 
+* {
+    transition: all 300ms ease-in-out;
+}
+
 //==== Transition ====//
 .icon-spin-enter-active,
 .icon-spin-leave-active {
