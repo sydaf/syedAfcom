@@ -14,6 +14,7 @@ import DiscordIcon from './components/svg/Discord.vue';
 import GithubIcon from './components/svg/Github.vue';
 import LinkedinIcon from './components/svg/Linkedin.vue';
 import GlobeShape from './components/svg/GlobeShape.vue';
+import ProjectTag from './components/ProjectTag.vue';
 
 let dark = ref(false);
 
@@ -48,8 +49,8 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Content -->
       <div class="gap-color p-0.5 grid md:grid-rows-8 md:grid-cols-10 gap-0.5">
-        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full " src="./assets/img/sydimg.webp"
-          alt="A picture of this creature of a developer">
+        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full "
+          src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
 
         <div
           class="panel panel-intro md:row-span-3 md:col-span-3 md:order-3 order-1 flex flex-col justify-between relative">
@@ -67,7 +68,7 @@ const currentYear = ref(new Date().getFullYear());
             I’m currently working as a front-end developer at Osky Interactive. Mainly working a lot with Wordpress
             templates and headless CMS.
           </p>
-          <div class="absolute top-2 right-2">
+          <div class="absolute top-3 right-3">
             <ArrowIcon />
           </div>
           <div class="absolute right-24 top-0">
@@ -79,27 +80,33 @@ const currentYear = ref(new Date().getFullYear());
         </div>
 
         <div class="panel panel-mystery md:row-span-2 md:col-span-2 md:order-7 order-4 flex justify-center items-center">
-          <QuestionMark/>
+          <QuestionMark />
         </div>
 
         <div class="panel panel-contact md:row-span-3 md:col-span-3 md:order-9 order-5 flex flex-col gap-2">
           <h2 class="text-xl">Contact.</h2>
           <div class="flex items-center gap-2">
-            <PhoneIcon/>
+            <PhoneIcon />
             <a href="#">016-234 5965</a>
           </div>
           <div class="flex items-center gap-2">
-            <EnvelopIcon/>
+            <EnvelopIcon />
             <a href="#">syedafinquiries</a>
           </div>
           <h2 class="text-xl">Socials.</h2>
           <div class="flex items-center gap-3">
-            <a href="#"><GithubIcon/></a>
-            <a href="#"><DiscordIcon/></a>
-            <a href="#"><LinkedinIcon/></a>
+            <a href="#">
+              <GithubIcon />
+            </a>
+            <a href="#">
+              <DiscordIcon />
+            </a>
+            <a href="#">
+              <LinkedinIcon />
+            </a>
           </div>
         </div>
-        
+
         <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6">
           Tech stack
         </div>
@@ -120,15 +127,73 @@ const currentYear = ref(new Date().getFullYear());
         </div>
 
         <!-- Projects -->
-        <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8"></div>
-        <div class="panel md:row-span-2 md:col-span-4 md:order-4 order-9">project1</div>
-        <div class="panel md:row-span-2 md:col-span-4 md:order-5 order-10">project2</div>
-        <div class="panel md:row-span-2 md:col-span-4 md:order-8 order-11">project3</div>
-        <div class="panel md:row-span-2 md:col-span-4 order-12">project4</div>
+        <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8 text-center ">
+          <h1 class="invert-mode py-5 ">Selected work</h1>
+        </div>
+
+        <div
+          class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between">
+          <div class="absolute top-3 right-3">
+            <ArrowIcon :showText="false" />
+          </div>
+          <h2>CVD</h2>
+          <p>An app for creating video resume equipped with AI generated scripts and teleprompter</p>
+          <div class="flex flex-wrap gap-1">
+            <ProjectTag text="react-native" />
+            <ProjectTag text="vueJs" />
+            <ProjectTag text="ios" />
+            <ProjectTag text="expo" />
+            <ProjectTag text="app development" />
+            <ProjectTag text="typescript" />
+          </div>
+        </div>
+
+        <div
+          class="panel panel-naati md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
+          <div class="absolute top-3 right-3">
+            <ArrowIcon :showText="false" />
+          </div>
+          <h2>NAATI</h2>
+          <p>Website revamp for translators and interpreters in Australia.</p>
+          <div class="flex flex-wrap gap-1">
+            <ProjectTag text="custom-widget" />
+            <ProjectTag text="custom-plugin" />
+            <ProjectTag text="elementor" />
+            <ProjectTag text="wordpress" />
+            <ProjectTag text="jquery" />
+            <ProjectTag text="cms" />
+          </div>
+        </div>
+        <div class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
+          <div class="absolute top-3 right-3">
+            <ArrowIcon :showText="false" />
+          </div>
+          <h2>OSKY</h2>
+          <p>Website revamp for a web development studio in Canberra Australia.</p>
+          <div class="flex flex-wrap gap-1">
+            <ProjectTag text="wordpress" />
+            <ProjectTag text="bootstrap" />
+            <ProjectTag text="jquery" />
+            <ProjectTag text="cms" />
+          </div>
+        </div>
+        <div class="panel panel-atoda md:row-span-2 md:col-span-4 order-12 flex flex-col justify-between relative">
+          <div class="absolute top-3 right-3">
+            <ArrowIcon :showText="false" />
+          </div>
+          <h2>ATODA</h2>
+          <p>Website revamp for a registered not-for-profit organisation with the Australian Charities and Not-for-profits Commission</p>
+          <div class="flex flex-wrap gap-1">
+            <ProjectTag text="wordpress" />
+            <ProjectTag text="bootstrap" />
+            <ProjectTag text="jquery" />
+            <ProjectTag text="cms" />
+          </div>
+        </div>
       </div>
 
       <!-- Footer -->
-      <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 ">
+      <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
         <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using Tailwind and Vue.js</p>
       </div>
 

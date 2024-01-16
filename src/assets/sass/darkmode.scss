@@ -9,6 +9,10 @@
         color: $white;
     }
 
+    .invert-mode {
+        color: $black;
+    }
+
     .dark-btn {
         color: $white;
     }
@@ -31,8 +35,12 @@
         color: $white;
     }
 
+    .project-tag {
+        border: 1px solid $white;
+    }
+
     //==== Panel colors ====//
-    .panel-intro, .panel-about, .panel-mystery, .panel-contact, .panel-stack, .panel-exp {
+    .panel-intro, .panel-about, .panel-mystery, .panel-contact, .panel-stack, .panel-exp, .panel-cvd, .panel-naati, .panel-osky, .panel-atoda {
         background-color: $black;
 
         .button-primary {

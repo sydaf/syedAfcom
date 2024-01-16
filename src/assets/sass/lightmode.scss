@@ -15,6 +15,10 @@
         color: $black;
     }
 
+    .invert-mode {
+        color: $white;
+    }
+
     .dark-btn {
         color: $black;
     }
@@ -35,6 +39,10 @@
     .mode-toggle-btn {
         font-family: $body;
         color: $black;
+    }
+
+    .project-tag {
+        border: 1px solid $black;
     }
 
     //==== Panels ====//
@@ -65,5 +73,21 @@
 
     .panel-exp {
         background-color: $purple;
+    }
+
+    .panel-cvd {
+        background-color: $light-lime;
+    }
+
+    .panel-naati {
+        background-color: $dark-teal;
+    }
+
+    .panel-osky {
+        background-color: $light-purple;
+    }
+
+    .panel-atoda {
+        background-color: $light-orange;
     }
 }
