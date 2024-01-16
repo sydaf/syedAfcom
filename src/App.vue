@@ -16,6 +16,19 @@ import LinkedinIcon from './components/svg/Linkedin.vue';
 import GlobeShape from './components/svg/GlobeShape.vue';
 import ProjectTag from './components/ProjectTag.vue';
 
+import Bootstrap from './components/svg/Bootstrap.vue';
+import Git from './components/svg/Git.vue';
+import JavaScript from './components/svg/JavaScript.vue';
+import Jquery from './components/svg/Jquery.vue';
+import ReactJs from './components/svg/ReactJs.vue';
+import Sass from './components/svg/Sass.vue';
+import TwScss from './components/svg/TwScss.vue';
+import VueIcon from './components/svg/VueIcon.vue';
+import Wordpress from './components/svg/Wordpress.vue';
+import Yarn from './components/svg/Yarn.vue';
+
+import { Vue3Marquee } from 'vue3-marquee'
+
 let dark = ref(false);
 
 const toggleDarkMode = () => {
@@ -23,6 +36,14 @@ const toggleDarkMode = () => {
 };
 
 const currentYear = ref(new Date().getFullYear());
+
+const imgArray = [
+  'https://sponsors.vuejs.org/images/vueschool.avif',
+  'https://sponsors.vuejs.org/images/vehikl.avif',
+  'https://sponsors.vuejs.org/images/vehikl.avif',
+  'https://sponsors.vuejs.org/images/vehikl.avif',
+  'https://sponsors.vuejs.org/images/dronahq.avif',
+];
 </script>
 
 <template>
@@ -107,8 +128,19 @@ const currentYear = ref(new Date().getFullYear());
           </div>
         </div>
 
-        <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6">
-          Tech stack
+        <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6 flex items-center relative">
+          <Vue3Marquee :clone="true" :duration="20" :pause-on-hover="true">
+            <Bootstrap />
+            <Git />
+            <JavaScript />
+            <Jquery />
+            <ReactJs />
+            <Sass />
+            <TwScss />
+            <VueIcon />
+            <Wordpress />
+            <Yarn />
+          </Vue3Marquee>
         </div>
 
         <div class="panel panel-exp md:row-span-2 md:col-span-3 md:order-11 order-7 flex flex-col gap-2 relative">
@@ -164,7 +196,8 @@ const currentYear = ref(new Date().getFullYear());
             <ProjectTag text="cms" />
           </div>
         </div>
-        <div class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
+        <div
+          class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
           <div class="absolute top-3 right-3">
             <ArrowIcon :showText="false" />
           </div>
@@ -182,7 +215,8 @@ const currentYear = ref(new Date().getFullYear());
             <ArrowIcon :showText="false" />
           </div>
           <h2>ATODA</h2>
-          <p>Website revamp for a registered not-for-profit organisation with the Australian Charities and Not-for-profits Commission</p>
+          <p>Website revamp for a registered not-for-profit organisation with the Australian Charities and Not-for-profits
+            Commission</p>
           <div class="flex flex-wrap gap-1">
             <ProjectTag text="wordpress" />
             <ProjectTag text="bootstrap" />
