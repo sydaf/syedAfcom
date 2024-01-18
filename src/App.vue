@@ -79,7 +79,7 @@ const imgArray = [
           <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
             life.</p>
           <ButtonPrimary buttonText="resume'"></ButtonPrimary>
-          <IntroShape class="absolute bottom-2 right-2" />
+          <IntroShape class="absolute bottom-2 right-2 pointer-events-none" />
         </div>
 
         <div
@@ -92,10 +92,10 @@ const imgArray = [
           <div class="absolute top-3 right-3">
             <ArrowIcon />
           </div>
-          <div class="absolute right-24 top-0">
+          <div class="absolute right-24 top-0 pointer-events-none">
             <StarSmall />
           </div>
-          <div class="absolute right-0">
+          <div class="absolute right-0 pointer-events-none">
             <StarBig />
           </div>
         </div>
@@ -108,21 +108,21 @@ const imgArray = [
           <h2 class="text-xl">Contact.</h2>
           <div class="flex items-center gap-2">
             <PhoneIcon />
-            <a href="#">016-234 5965</a>
+            <a target="_blank" href="https://wa.me/60162435965">016-234 5965</a>
           </div>
           <div class="flex items-center gap-2">
             <EnvelopIcon />
-            <a href="#">syedafinquiries</a>
+            <a href="mailto:syedahmadfakhrullah@gmail.com">syedahmadfakhrullah</a>
           </div>
           <h2 class="text-xl">Socials.</h2>
           <div class="flex items-center gap-3">
-            <a href="#">
+            <a target="_blank" href="https://github.com/sydaf/">
               <GithubIcon />
             </a>
-            <a href="#">
+            <a href="discordapp.com/usres/612376608745193513">
               <DiscordIcon />
             </a>
-            <a href="#">
+            <a target="_blank" href="https://www.linkedin.com/in/fakrulfauzi/">
               <LinkedinIcon />
             </a>
           </div>
@@ -166,7 +166,9 @@ const imgArray = [
         <div
           class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between">
           <div class="absolute top-3 right-3">
-            <ArrowIcon :showText="false" />
+            <a target="_blank" href="#">
+              <ArrowIcon :showText="false" />
+            </a>
           </div>
           <h2>CVD</h2>
           <p>An app for creating video resume equipped with AI generated scripts and teleprompter</p>
@@ -183,7 +185,9 @@ const imgArray = [
         <div
           class="panel panel-naati md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
           <div class="absolute top-3 right-3">
-            <ArrowIcon :showText="false" />
+            <a target="_blank" href="https://www.naati.com.au">
+              <ArrowIcon :showText="false" />
+            </a>
           </div>
           <h2>NAATI</h2>
           <p>Website revamp for translators and interpreters in Australia.</p>
@@ -199,7 +203,9 @@ const imgArray = [
         <div
           class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
           <div class="absolute top-3 right-3">
-            <ArrowIcon :showText="false" />
+            <a target="_blank" href="https://www.osky.com.au">
+              <ArrowIcon :showText="false" />
+            </a>
           </div>
           <h2>OSKY</h2>
           <p>Website revamp for a web development studio in Canberra Australia.</p>
@@ -212,7 +218,9 @@ const imgArray = [
         </div>
         <div class="panel panel-atoda md:row-span-2 md:col-span-4 order-12 flex flex-col justify-between relative">
           <div class="absolute top-3 right-3">
-            <ArrowIcon :showText="false" />
+            <a target="_blank" href="https://www.atoda.org.au">
+              <ArrowIcon :showText="false" />
+            </a>
           </div>
           <h2>ATODA</h2>
           <p>Website revamp for a registered not-for-profit organisation with the Australian Charities and Not-for-profits

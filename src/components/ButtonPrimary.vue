@@ -1,5 +1,5 @@
 <template>
-    <button class="button-primary round-custom text-xl px-5 py-1.5 w-fit">{{ buttonText }}</button>
+    <button class="button-primary round-custom text-xl px-5 py-1.5 w-fit relative z-1">{{ buttonText }}</button>
 </template>
 
 <script>

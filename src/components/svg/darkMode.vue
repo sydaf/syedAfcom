@@ -1,5 +1,5 @@
 <template>
-    <svg class="changeable-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="changeable-svg moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M10 0C10.6904 0 11.25 0.559644 11.25 1.25V2.5C11.25 3.19036 10.6904 3.75 10 3.75C9.30964 3.75 8.75 3.19036 8.75 2.5V1.25C8.75 0.559644 9.30964 0 10 0Z" />
         <path
