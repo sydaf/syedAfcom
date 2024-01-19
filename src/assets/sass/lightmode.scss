@@ -16,6 +16,32 @@
         color: $black;
     }
 
+    .slider-link {
+        position: relative;
+        z-index: 2;
+        background-color: $sky-blue;
+    
+        &::after {
+            z-index: -1;
+            opacity: 0;
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            right: 0px;
+            transition: all 0.3s ease;
+            display: block;
+            background: url(../img/hand-point.webp) no-repeat center center;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+        }
+    
+        &:hover::after {
+            right: -30px;
+            opacity: 1;
+        }
+    }
+
     .invert-mode {
         color: $white;
     }
@@ -26,12 +52,19 @@
 
     .gap-color {
         background-color: $black;
+        border-radius: 27px;
     }
 
     .changeable-svg {
         path {
             transition: all 250ms ease-in-out;
             fill: $black;
+        }
+    }
+
+    .social-svg {
+        &:hover path {
+            fill: $white;
         }
     }
 

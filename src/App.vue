@@ -78,7 +78,9 @@ const imgArray = [
           <h1>Hello! <span class="hand-wave">🖐️</span> I'm Syed.</h1>
           <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
             life.</p>
-          <ButtonPrimary buttonText="resume'"></ButtonPrimary>
+            <a href="../src/assets/SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
+              <ButtonPrimary buttonText="resume'"></ButtonPrimary>
+            </a>
           <IntroShape class="absolute bottom-2 right-2 pointer-events-none" />
         </div>
 
@@ -108,11 +110,15 @@ const imgArray = [
           <h2 class="text-xl">Contact.</h2>
           <div class="flex items-center gap-2">
             <PhoneIcon />
-            <a target="_blank" href="https://wa.me/60162435965">016-234 5965</a>
+            <div class="relative">
+              <a class="slider-link" target="_blank" href="https://wa.me/60162435965">016-234 5965</a>
+            </div>
           </div>
           <div class="flex items-center gap-2">
             <EnvelopIcon />
-            <a href="mailto:syedahmadfakhrullah@gmail.com">syedahmadfakhrullah</a>
+            <div class="relative">
+              <a class="slider-link" href="mailto:syedahmadfakhrullah@gmail.com">syedahmadfakhrullah</a>
+            </div>
           </div>
           <h2 class="text-xl">Socials.</h2>
           <div class="flex items-center gap-3">
