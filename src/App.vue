@@ -75,7 +75,7 @@ const currentYear = ref(new Date().getFullYear());
           <h1>Hello! <span class="hand-wave">🖐️</span> <br> I'm Syed.</h1>
           <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
             life.</p>
-          <a href="../src/assets/SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
+          <a href="SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
             <ButtonPrimary buttonText="resume'"></ButtonPrimary>
           </a>
           <IntroShape class="absolute bottom-2 right-2 pointer-events-none" />
@@ -92,7 +92,7 @@ const currentYear = ref(new Date().getFullYear());
           </div>
           <div v-else class="personal-abt">
             <p class="pb-3 ">
-              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all, I play <a class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
+              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all, I play <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
             </p>
             <div class="flex gap-2 items-center">
               <img src="./assets/img/untamed.png" alt="">
@@ -251,7 +251,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Footer -->
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
-        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a class="p-bold" href="https://tailwindcss.com">Tailwind</a> and <a class="p-bold" href="https://vuejs.org">VueJs</a></p>
+        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold" href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold" href="https://vuejs.org">VueJs</a></p>
       </div>
 
     </div>
