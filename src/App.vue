@@ -29,21 +29,18 @@ import Yarn from './components/svg/Yarn.vue';
 
 import { Vue3Marquee } from 'vue3-marquee'
 
-let dark = ref(false);
+let dark = ref(false)
+let primaryAbt = ref(true)
 
 const toggleDarkMode = () => {
   dark.value = !dark.value;
 };
 
-const currentYear = ref(new Date().getFullYear());
+const togglePersonal = () => {
+  primaryAbt.value = !primaryAbt.value
+}
 
-const imgArray = [
-  'https://sponsors.vuejs.org/images/vueschool.avif',
-  'https://sponsors.vuejs.org/images/vehikl.avif',
-  'https://sponsors.vuejs.org/images/vehikl.avif',
-  'https://sponsors.vuejs.org/images/vehikl.avif',
-  'https://sponsors.vuejs.org/images/dronahq.avif',
-];
+const currentYear = ref(new Date().getFullYear());
 </script>
 
 <template>
@@ -70,7 +67,7 @@ const imgArray = [
 
       <!-- Content -->
       <div class="gap-color p-0.5 grid md:grid-rows-8 md:grid-cols-10 gap-0.5">
-        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full "
+        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full relative z-1"
           src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
 
         <div
@@ -78,27 +75,39 @@ const imgArray = [
           <h1>Hello! <span class="hand-wave">🖐️</span> I'm Syed.</h1>
           <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
             life.</p>
-            <a href="../src/assets/SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
-              <ButtonPrimary buttonText="resume'"></ButtonPrimary>
-            </a>
+          <a href="../src/assets/SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
+            <ButtonPrimary buttonText="resume'"></ButtonPrimary>
+          </a>
           <IntroShape class="absolute bottom-2 right-2 pointer-events-none" />
         </div>
 
         <div
-          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex justify-between flex-col relative">
+          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex justify-between flex-col relative" :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
           <h2 class="text-xl">About.</h2>
-          <p>
-            I’m currently working as a front-end developer at Osky Interactive. Mainly working a lot with Wordpress
-            templates and headless CMS.
-          </p>
+          <div v-if="primaryAbt" class="primary-abt">
+            <p>
+              I’m currently working as a front-end developer at Osky Interactive. Mainly working a lot with Wordpress
+              templates and headless CMS.
+            </p>
+          </div>
+          <div v-else class="personal-abt">
+            <p class="pb-3 ">
+              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all, I play <a class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
+            </p>
+            <div class="flex gap-2 items-center">
+              <img src="./assets/img/untamed.png" alt="">
+              <img src="./assets/img/mechanist.png" alt="">
+              <p class="p-bold">syd.6418</p>
+            </div>
+          </div>
           <div class="absolute top-3 right-3">
-            <ArrowIcon />
+            <ArrowIcon @click="togglePersonal"/>
           </div>
           <div class="absolute right-24 top-0 pointer-events-none">
-            <StarSmall />
+            <StarSmall :class="{ 'floating-sm': primaryAbt, 'floating-p': !primaryAbt }"/>
           </div>
           <div class="absolute right-0 pointer-events-none">
-            <StarBig />
+            <StarBig :class="{ 'floating': primaryAbt, 'floating-p-sm': !primaryAbt }"/>
           </div>
         </div>
 
@@ -242,7 +251,7 @@ const imgArray = [
 
       <!-- Footer -->
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
-        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using Tailwind and Vue.js</p>
+        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a class="p-bold" href="https://tailwindcss.com">Tailwind</a> and <a class="p-bold" href="https://vuejs.org">VueJs</a></p>
       </div>
 
     </div>

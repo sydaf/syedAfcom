@@ -1,5 +1,5 @@
 <template>
-    <svg class="bg-shapes" width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="bg-shapes globe-shape" width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M53.8596 33.0554H79.2257C78.69 30.7227 78.1025 28.5225 77.4631 26.4778C74.4681 16.8935 70.5917 10.961 66.5369 10.961C62.482 10.961 58.6114 16.8935 55.6106 26.4778C54.9713 28.5167 54.3837 30.7227 53.8481 33.0554H53.8596Z" />
         <path

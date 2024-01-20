@@ -103,8 +103,36 @@
         background-color: $teal;
     }
 
+    .personal {
+        background-color: $white !important;
+    }
+
     .panel-mystery {
         background-color: $energy-lime;
+        cursor: help;
+
+        &:hover {
+            background-color: $energy-lime;
+            animation: energyPulse 3s ease-in-out infinite;
+        }
+
+        &:hover path {
+            fill: $black;
+        }
+
+        @keyframes energyPulse {
+            0% {
+                box-shadow: 0px 0px 120px 15px rgba(250,255,0,1);
+            }
+
+            50% {
+                box-shadow: 0px 0px 180px 120px rgba(250,255,0,1);
+            }
+
+            100% {
+                box-shadow: 0px 0px 120px 15px rgba(250,255,0,1);
+            }
+        }
     }
 
     .panel-contact {

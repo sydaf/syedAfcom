@@ -20,7 +20,8 @@
     opacity: 0;
 }
 
-.sun-icon, .moon-icon {
+.sun-icon,
+.moon-icon {
     animation: fade 200ms;
 }
 
@@ -28,23 +29,122 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
 @keyframes wave {
-    0% { transform: rotate( 0.0deg) }
-    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-    20% { transform: rotate(-8.0deg) }
-    30% { transform: rotate(14.0deg) }
-    40% { transform: rotate(-4.0deg) }
-    50% { transform: rotate(10.0deg) }
-    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-   100% { transform: rotate( 0.0deg) }
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
 }
 
 .hand-wave {
     display: inline-block;
     animation: wave 2s infinite;
+}
+
+.globe-shape {
+    animation: pulsing 5s ease-in-out infinite;
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.floating-sm {
+    animation: floating 3s ease-in-out infinite 500ms;
+}
+
+.floating-p {
+    animation: floatingP 3s ease-in-out infinite;
+}
+
+.floating-p-sm {
+    animation: floatingPSM 3500ms ease-in-out infinite;
+}
+
+@keyframes floatingP {
+    0% {
+        transform: translate(0, 0px) rotate(15deg);
+    }
+
+    50% {
+        transform: translate(0, 15px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, -0px) rotate(15deg);
+    }
+}
+
+@keyframes floatingPSM {
+    0% {
+        transform: translate(0, 0px) rotate(-15deg);
+    }
+
+    50% {
+        transform: translate(0, 15px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, -0px) rotate(-15deg);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
 }
