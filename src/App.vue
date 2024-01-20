@@ -45,13 +45,13 @@ const currentYear = ref(new Date().getFullYear());
 
 <template>
   <div
-    class="bg-container md:max-h-screen md:h-screen flex items-center justify-center px-1.5 md:px-0 selection:bg-lime-400 selection:text-slate-950"
+    class="bg-container md:max-h-screen md:h-screen flex items-center justify-center px-1.5 md:px-0 py-3 md:py-0 selection:bg-lime-400 selection:text-slate-950"
     :class="{ 'dark-mode': dark, 'light-mode': !dark }">
     <div class="max-w-4xl">
 
       <!-- Heading -->
       <div class="grid md:grid-rows-1 md:grid-cols-10 gap-0.5">
-        <div class="mode-toggler flex items-end gap-2 md:row-span-1 md:col-span-6 order-first">
+        <div class="mode-toggler flex items-end gap-2 md:row-span-1 md:col-span-6 order-first justify-center md:justify-start">
           <button class="mode-toggle-btn flex gap-2 items-center" @click="toggleDarkMode">
             <transition name="icon-spin" mode="out-in">
               <LightModeIcon v-if="dark" key="light-mode-icon" />
@@ -71,8 +71,8 @@ const currentYear = ref(new Date().getFullYear());
           src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
 
         <div
-          class="panel panel-intro md:row-span-3 md:col-span-3 md:order-3 order-1 flex flex-col justify-between relative">
-          <h1>Hello! <span class="hand-wave">🖐️</span> I'm Syed.</h1>
+          class="panel panel-intro md:row-span-3 md:col-span-3 md:order-3 order-1 flex flex-col gap-3 md:gap-0 md:justify-between relative">
+          <h1>Hello! <span class="hand-wave">🖐️</span> <br> I'm Syed.</h1>
           <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
             life.</p>
           <a href="../src/assets/SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
@@ -82,7 +82,7 @@ const currentYear = ref(new Date().getFullYear());
         </div>
 
         <div
-          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex justify-between flex-col relative" :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
+          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex gap-3 md:gap-0 justify-between flex-col relative" :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
           <h2 class="text-xl">About.</h2>
           <div v-if="primaryAbt" class="primary-abt">
             <p>
@@ -115,7 +115,7 @@ const currentYear = ref(new Date().getFullYear());
           <QuestionMark />
         </div>
 
-        <div class="panel panel-contact md:row-span-3 md:col-span-3 md:order-9 order-5 flex flex-col gap-2">
+        <div class="panel panel-contact md:row-span-3 md:col-span-3 md:order-9 order-5 flex flex-col gap-3 md:gap-2">
           <h2 class="text-xl">Contact.</h2>
           <div class="flex items-center gap-2">
             <PhoneIcon />
