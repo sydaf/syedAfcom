@@ -51,7 +51,8 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Heading -->
       <div class="grid md:grid-rows-1 md:grid-cols-10 gap-0.5">
-        <div class="mode-toggler flex items-end gap-2 md:row-span-1 md:col-span-6 order-first justify-center md:justify-start">
+        <div
+          class="mode-toggler flex items-end gap-2 md:row-span-1 md:col-span-6 order-first justify-center md:justify-start">
           <button class="mode-toggle-btn flex gap-2 items-center" @click="toggleDarkMode">
             <transition name="icon-spin" mode="out-in">
               <LightModeIcon v-if="dark" key="light-mode-icon" />
@@ -82,7 +83,8 @@ const currentYear = ref(new Date().getFullYear());
         </div>
 
         <div
-          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex gap-3 md:gap-0 justify-between flex-col relative" :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
+          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex gap-3 md:gap-0 justify-between flex-col relative"
+          :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
           <h2 class="text-xl">About.</h2>
           <div v-if="primaryAbt" class="primary-abt">
             <p>
@@ -92,7 +94,8 @@ const currentYear = ref(new Date().getFullYear());
           </div>
           <div v-else class="personal-abt">
             <p class="pb-3 ">
-              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all, I play <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
+              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all,
+              I play <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
             </p>
             <div class="flex gap-2 items-center">
               <img src="./assets/img/untamed.png" alt="">
@@ -101,13 +104,13 @@ const currentYear = ref(new Date().getFullYear());
             </div>
           </div>
           <div class="absolute top-3 right-3">
-            <ArrowIcon @click="togglePersonal"/>
+            <ArrowIcon @click="togglePersonal" />
           </div>
           <div class="absolute right-24 top-0 pointer-events-none">
-            <StarSmall :class="{ 'floating-sm': primaryAbt, 'floating-p': !primaryAbt }"/>
+            <StarSmall :class="{ 'floating-sm': primaryAbt, 'floating-p': !primaryAbt }" />
           </div>
           <div class="absolute right-0 pointer-events-none">
-            <StarBig :class="{ 'floating': primaryAbt, 'floating-p-sm': !primaryAbt }"/>
+            <StarBig :class="{ 'floating': primaryAbt, 'floating-p-sm': !primaryAbt }" />
           </div>
         </div>
 
@@ -134,7 +137,7 @@ const currentYear = ref(new Date().getFullYear());
             <a target="_blank" href="https://github.com/sydaf/">
               <GithubIcon />
             </a>
-            <a href="discordapp.com/usres/612376608745193513">
+            <a target="_blank" href="discordapp.com/users/612376608745193513">
               <DiscordIcon />
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/fakrulfauzi/">
@@ -180,12 +183,13 @@ const currentYear = ref(new Date().getFullYear());
 
         <div
           class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between">
-          <div class="absolute top-3 right-3">
-            <a target="_blank" href="#">
-              <ArrowIcon :showText="false" />
-            </a>
+          <!-- <div class="absolute top-3 right-3">
+            <ArrowIcon :showText="false"/>
+          </div> -->
+          <div class="flex items-center gap-1">
+            <h2>CVD</h2>
+            <p class="opacity-50 mb-1.5">- coming soon</p>
           </div>
-          <h2>CVD</h2>
           <p>An app for creating video resume equipped with AI generated scripts and teleprompter</p>
           <div class="flex flex-wrap gap-1">
             <ProjectTag text="react-native" />
@@ -251,9 +255,10 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Footer -->
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
-        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold" href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold" href="https://vuejs.org">VueJs</a></p>
+        <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold"
+            href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold"
+            href="https://vuejs.org">VueJs</a></p>
       </div>
 
-    </div>
   </div>
-</template>
+</div></template>
