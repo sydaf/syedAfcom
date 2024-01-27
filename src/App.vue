@@ -2,32 +2,14 @@
 import { ref } from 'vue';
 import DarkModeIcon from './components/svg/DarkMode.vue';
 import LightModeIcon from './components/svg/LightMode.vue';
-import ButtonPrimary from './components/ButtonPrimary.vue';
-import IntroShape from './components/svg/IntroShape.vue';
-import ArrowIcon from './components/svg/Arrow.vue';
-import StarBig from './components/svg/StarBig.vue';
-import StarSmall from './components/svg/StarSmall.vue';
 import QuestionMark from './components/svg/QuestionMark.vue';
-import PhoneIcon from './components/svg/Phone.vue';
-import EnvelopIcon from './components/svg/Envelop.vue';
-import DiscordIcon from './components/svg/Discord.vue';
-import GithubIcon from './components/svg/Github.vue';
-import LinkedinIcon from './components/svg/Linkedin.vue';
-import GlobeShape from './components/svg/GlobeShape.vue';
-import ProjectTag from './components/ProjectTag.vue';
 
-import Bootstrap from './components/svg/Bootstrap.vue';
-import Git from './components/svg/Git.vue';
-import JavaScript from './components/svg/JavaScript.vue';
-import Jquery from './components/svg/Jquery.vue';
-import ReactJs from './components/svg/ReactJs.vue';
-import Sass from './components/svg/Sass.vue';
-import TwScss from './components/svg/TwScss.vue';
-import VueIcon from './components/svg/VueIcon.vue';
-import Wordpress from './components/svg/Wordpress.vue';
-import Yarn from './components/svg/Yarn.vue';
-
-import { Vue3Marquee } from 'vue3-marquee'
+import IntroSection from './components/sections/introSection.vue';
+import AboutSection from './components/sections/aboutSection.vue';
+import ContactSection from './components/sections/contactSection.vue';
+import StackSection from './components/sections/stackSection.vue';
+import ExpSection from './components/sections/expSection.vue';
+import ProjectSection from './components/sections/projectSection.vue';
 
 let dark = ref(false)
 let primaryAbt = ref(true)
@@ -45,7 +27,7 @@ const currentYear = ref(new Date().getFullYear());
 
 <template>
   <div
-    class="bg-container md:max-h-screen md:h-screen flex items-center justify-center px-1.5 md:px-0 py-3 md:py-0 selection:bg-lime-400 selection:text-slate-950"
+    class="bg-container flex min-h-screen items-center justify-center px-1.5 md:px-0 py-3 md:py-4 selection:bg-lime-400 selection:text-slate-950"
     :class="{ 'dark-mode': dark, 'light-mode': !dark }">
     <div class="max-w-4xl">
 
@@ -71,194 +53,35 @@ const currentYear = ref(new Date().getFullYear());
         <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full relative z-1"
           src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
 
-        <div
-          class="panel panel-intro md:row-span-3 md:col-span-3 md:order-3 order-1 flex flex-col gap-3 md:gap-0 md:justify-between relative">
-          <h1>Hello! <span class="hand-wave">🖐️</span> <br> I'm Syed.</h1>
-          <p>A fellow front-end developer building passion-driven user interfaces to bring your digital experiences to
-            life.</p>
-          <a href="SyedAF.pdf" target="_blank" type="application/pdf" rel="alternate" media="print">
-            <ButtonPrimary buttonText="resume'"></ButtonPrimary>
-          </a>
-          <IntroShape class="absolute bottom-2 right-2 pointer-events-none" />
-        </div>
-
-        <div
-          class="panel panel-about md:row-span-2 md:col-span-4 md:order-6 order-3 flex gap-3 md:gap-0 justify-between flex-col relative"
-          :class="{ 'not-personal': primaryAbt, 'personal': !primaryAbt }">
-          <h2 class="text-xl">About.</h2>
-          <div v-if="primaryAbt" class="primary-abt">
-            <p>
-              I’m currently working as a front-end developer at Osky Interactive. Mainly working a lot with Wordpress
-              templates and headless CMS.
-            </p>
-          </div>
-          <div v-else class="personal-abt">
-            <p class="pb-3 ">
-              Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all,
-              I play <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
-            </p>
-            <div class="flex gap-2 items-center">
-              <img src="./assets/img/untamed.png" alt="">
-              <img src="./assets/img/mechanist.png" alt="">
-              <p class="p-bold">syd.6418</p>
-            </div>
-          </div>
-          <div class="absolute top-3 right-3">
-            <ArrowIcon @click="togglePersonal" />
-          </div>
-          <div class="absolute right-24 top-0 pointer-events-none">
-            <StarSmall :class="{ 'floating-sm': primaryAbt, 'floating-p': !primaryAbt }" />
-          </div>
-          <div class="absolute right-0 pointer-events-none">
-            <StarBig :class="{ 'floating': primaryAbt, 'floating-p-sm': !primaryAbt }" />
-          </div>
-        </div>
+        <IntroSection />
+        <AboutSection />
 
         <div class="panel panel-mystery md:row-span-2 md:col-span-2 md:order-7 order-4 flex justify-center items-center">
           <QuestionMark />
         </div>
 
-        <div class="panel panel-contact md:row-span-3 md:col-span-3 md:order-9 order-5 flex flex-col gap-3 md:gap-2">
-          <h2 class="text-xl">Contact.</h2>
-          <div class="flex items-center gap-2">
-            <PhoneIcon />
-            <div class="relative">
-              <a class="slider-link" target="_blank" href="https://wa.me/60162435965">016-234 5965</a>
-            </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <EnvelopIcon />
-            <div class="relative">
-              <a class="slider-link" href="mailto:syedahmadfakhrullah@gmail.com">syedahmadfakhrullah</a>
-            </div>
-          </div>
-          <h2 class="text-xl">Socials.</h2>
-          <div class="flex items-center gap-3">
-            <a target="_blank" href="https://github.com/sydaf/">
-              <GithubIcon />
-            </a>
-            <a target="_blank" href="discordapp.com/users/612376608745193513">
-              <DiscordIcon />
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/fakrulfauzi/">
-              <LinkedinIcon />
-            </a>
-          </div>
-        </div>
-
-        <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6 flex items-center relative">
-          <Vue3Marquee :clone="true" :duration="20" :pause-on-hover="true">
-            <Bootstrap />
-            <Git />
-            <JavaScript />
-            <Jquery />
-            <ReactJs />
-            <Sass />
-            <TwScss />
-            <VueIcon />
-            <Wordpress />
-            <Yarn />
-          </Vue3Marquee>
-        </div>
-
-        <div class="panel panel-exp md:row-span-2 md:col-span-3 md:order-11 order-7 flex flex-col gap-2 relative">
-          <h2 class="text-xl">Experience.</h2>
-          <div class="first-exp">
-            <p>OSKY Interactive</p>
-            <p class="opacity-60">2023 - Present</p>
-          </div>
-          <div class="second-exp">
-            <p>Sfera Digital Solutions</p>
-            <p class="opacity-60">2020 - 2022</p>
-          </div>
-          <div class="absolute right-0 bottom-0">
-            <GlobeShape />
-          </div>
-        </div>
+        <ContactSection />
+        <StackSection />
+        <ExpSection />
 
         <!-- Projects -->
         <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8 text-center ">
           <h1 class="invert-mode py-5 ">Selected work</h1>
         </div>
 
-        <div
-          class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between">
-          <!-- <div class="absolute top-3 right-3">
-            <ArrowIcon :showText="false"/>
-          </div> -->
-          <div class="flex items-center gap-1">
-            <h2>CVD</h2>
-            <p class="opacity-50 mb-1.5">- coming soon</p>
-          </div>
-          <p>An app for creating video resume equipped with AI generated scripts and teleprompter</p>
-          <div class="flex flex-wrap gap-1">
-            <ProjectTag text="react-native" />
-            <ProjectTag text="vueJs" />
-            <ProjectTag text="ios" />
-            <ProjectTag text="expo" />
-            <ProjectTag text="app development" />
-            <ProjectTag text="typescript" />
-          </div>
-        </div>
+        <ProjectSection />
 
-        <div
-          class="panel panel-naati md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
-          <div class="absolute top-3 right-3">
-            <a target="_blank" href="https://www.naati.com.au">
-              <ArrowIcon :showText="false" />
-            </a>
-          </div>
-          <h2>NAATI</h2>
-          <p>Website revamp for translators and interpreters in Australia.</p>
-          <div class="flex flex-wrap gap-1">
-            <ProjectTag text="custom-widget" />
-            <ProjectTag text="custom-plugin" />
-            <ProjectTag text="elementor" />
-            <ProjectTag text="wordpress" />
-            <ProjectTag text="jquery" />
-            <ProjectTag text="cms" />
-          </div>
-        </div>
-        <div
-          class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
-          <div class="absolute top-3 right-3">
-            <a target="_blank" href="https://www.osky.com.au">
-              <ArrowIcon :showText="false" />
-            </a>
-          </div>
-          <h2>OSKY</h2>
-          <p>Website revamp for a web development studio in Canberra Australia.</p>
-          <div class="flex flex-wrap gap-1">
-            <ProjectTag text="wordpress" />
-            <ProjectTag text="bootstrap" />
-            <ProjectTag text="jquery" />
-            <ProjectTag text="cms" />
-          </div>
-        </div>
-        <div class="panel panel-atoda md:row-span-2 md:col-span-4 order-12 flex flex-col justify-between relative">
-          <div class="absolute top-3 right-3">
-            <a target="_blank" href="https://www.atoda.org.au">
-              <ArrowIcon :showText="false" />
-            </a>
-          </div>
-          <h2>ATODA</h2>
-          <p>Website revamp for a registered not-for-profit organisation with the Australian Charities and Not-for-profits
-            Commission</p>
-          <div class="flex flex-wrap gap-1">
-            <ProjectTag text="wordpress" />
-            <ProjectTag text="bootstrap" />
-            <ProjectTag text="jquery" />
-            <ProjectTag text="cms" />
-          </div>
-        </div>
       </div>
 
       <!-- Footer -->
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
         <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold"
             href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold"
-            href="https://vuejs.org">VueJs</a></p>
+            href="https://vuejs.org">VueJs</a> <br>
+            Hosted by <a class="p-bold" href="https://aliifz,.com">AliifZin</a>
+          </p>
       </div>
 
+    </div>
   </div>
-</div></template>
+</template>
