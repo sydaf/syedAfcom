@@ -50,7 +50,7 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Content -->
       <div class="gap-color p-0.5 grid md:grid-rows-8 md:grid-cols-10 gap-0.5">
-        <img class="round-custom md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full relative z-1"
+        <img class="round-custom h-full md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full relative z-1"
           src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
 
         <IntroSection />
