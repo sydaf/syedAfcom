@@ -66,7 +66,7 @@ const currentYear = ref(new Date().getFullYear());
 
         <!-- Projects -->
         <div class="md:row-span-1 md:col-span-4 md:order-1 md:hidden block order-8 text-center ">
-          <h1 class="invert-mode py-5 ">Selected work</h1>
+          <h1 class="invert-mode py-5">Selected work</h1>
         </div>
 
         <ProjectSection />

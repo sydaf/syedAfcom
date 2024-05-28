@@ -11,6 +11,8 @@ import TwScss from '../svg/TwScss.vue';
 import VueIcon from '../svg/VueIcon.vue';
 import Wordpress from '../svg/Wordpress.vue';
 import Yarn from '../svg/Yarn.vue';
+import Gpql from '../svg/Gpql.vue';
+import Nextjs from '../svg/Nextjs.vue';
 </script>
 
 <template>
@@ -26,6 +28,8 @@ import Yarn from '../svg/Yarn.vue';
             <VueIcon />
             <Wordpress />
             <Yarn />
+            <Gpql />
+            <Nextjs />
         </Vue3Marquee>
     </div>
 </template>
