@@ -1,5 +1,5 @@
 <script setup>
-import ProjectTag from '../projecttag.vue';
+import ProjectTag from '../ProjectTag.vue';
 import ArrowIcon from '../Arrow.vue';
 </script>
 
