@@ -78,7 +78,7 @@ const currentYear = ref(new Date().getFullYear());
         <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold"
             href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold"
             href="https://vuejs.org">VueJs</a> <br>
-            Hosted by <a class="p-bold" href="https://aliifz,.com">AliifZin</a>
+            Hosted by <a class="p-bold" href="https://aliifz.com">AliifZin</a>
           </p>
       </div>
 
