@@ -23,8 +23,7 @@ const togglePersonal = () => {
         </div>
         <div v-else class="personal-abt">
             <p class="pb-3 ">
-                Experimenting with JavaScript frameworks and working to improve my portfolio. While I'm not working at all,
-                I play <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
+                In my free time, I'm working on my photography skills and playing MMOs like <a target="_blank" class="p-bold" href="https://www.guildwars2.com">Guild Wars 2</a>.
             </p>
             <div class="flex gap-2 items-center">
                 <img src="../../assets/img/untamed.png" alt="I play an Untamed">
