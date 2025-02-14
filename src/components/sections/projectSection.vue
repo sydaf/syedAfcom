@@ -41,7 +41,7 @@ import ArrowIcon from "../Arrow.vue";
       </a>
     </div>
     <h2>NAATI</h2>
-    <p>Website refresh for translators and interpreters in Australia, using Elementor for easy customization.</p>
+    <p>Website refresh using Elementor, custom widgets and plugins for easy customization.</p>
     <div class="flex flex-wrap gap-1">
       <ProjectTag text="custom-widget" />
       <ProjectTag text="custom-plugin" />
@@ -58,12 +58,12 @@ import ArrowIcon from "../Arrow.vue";
         <ArrowIcon :showText="false" />
       </a>
     </div>
-    <h2>OSKY</h2>
-    <p>Revamped the website for a leading Australian web development studio, enhancing design and functionality.</p>
+    <h2>OSKY v2</h2>
+    <p>Revamped a WordPress website into a Headless Wordpress site using NextJS and WPGraphQL.</p>
     <div class="flex flex-wrap gap-1">
       <ProjectTag text="wordpress" />
       <ProjectTag text="bootstrap" />
-      <ProjectTag text="jquery" />
+      <ProjectTag text="nextjs" />
       <ProjectTag text="cms" />
     </div>
   </div>

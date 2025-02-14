@@ -50,14 +50,19 @@ const currentYear = ref(new Date().getFullYear());
 
       <!-- Content -->
       <div class="gap-color p-0.5 grid md:grid-rows-8 md:grid-cols-10 gap-0.5">
-        <img class="round-custom h-full md:row-span-3 md:col-span-3 order-2 object-cover md:object-none w-full relative z-1"
-          src="./assets/img/sydimg.webp" alt="A picture of this creature of a developer">
+        <div class="round-custom h-full overflow-hidden md:row-span-3 md:col-span-3 order-2">
+          <img class="object-cover h-[280px] object-center w-full relative z-1"
+            src="./assets/img/sydimg.webp" alt="SyedAF">
+        </div>
 
         <IntroSection />
         <AboutSection />
 
-        <div class="panel panel-mystery md:row-span-2 md:col-span-2 md:order-7 order-4 flex justify-center items-center">
+        <div class="panel panel-mystery md:row-span-2 md:col-span-2 md:order-7 order-4 flex flex-col justify-center items-center">
           <QuestionMark />
+          <p class="pt-2 font-semibold">
+            Coming Soon
+          </p>
         </div>
 
         <ContactSection />
@@ -77,8 +82,7 @@ const currentYear = ref(new Date().getFullYear());
       <div class="md:row-span-1 md:col-span-10 order-last text-center flex justify-center mt-5 mb-5 md:mb-0">
         <p class="max-w-[225px]">© {{ currentYear }} · Assembled with ❤️ using <a target="_blank" class="p-bold"
             href="https://tailwindcss.com">Tailwind</a> and <a target="_blank" class="p-bold"
-            href="https://vuejs.org">VueJs</a> <br>
-            Hosted by <a class="p-bold" href="https://aliifz.com">AliifZin</a>
+            href="https://vuejs.org">VueJs</a>
           </p>
       </div>
 

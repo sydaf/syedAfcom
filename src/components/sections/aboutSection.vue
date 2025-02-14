@@ -17,8 +17,7 @@ const togglePersonal = () => {
         <h2 class="text-xl">About.</h2>
         <div v-if="primaryAbt" class="primary-abt">
             <p>
-                I’m currently working as a front-end developer at Osky Interactive. Mainly working a lot with Wordpress
-                templates and headless CMS.
+                I’m currently working as a front-end developer at Osky Interactive. Focusing on WordPress, Laravel Webapp, Headless Wordpress, Android and IOS app.
             </p>
         </div>
         <div v-else class="personal-abt">
