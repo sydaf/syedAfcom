@@ -26,9 +26,9 @@ import LinkedinIcon from '../svg/Linkedin.vue';
             <a target="_blank" href="https://github.com/sydaf/">
                 <GithubIcon />
             </a>
-            <a target="_blank" href="discordapp.com/users/612376608745193513">
+            <!-- <a target="_blank" href="discordapp.com/users/612376608745193513">
                 <DiscordIcon />
-            </a>
+            </a> -->
             <a target="_blank" href="https://www.linkedin.com/in/fakrulfauzi/">
                 <LinkedinIcon />
             </a>
