@@ -31,7 +31,7 @@ import ArrowIcon from "../Arrow.vue";
   </div>
 
   <div
-    class="panel bg-[#e3b505] md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
+    class="panel panel-escabee md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
     <div class="absolute top-3 right-3">
       <a target="_blank" href="https://apps.apple.com/app/escabee-com/id6748956455">
         <ArrowIcon :showText="false" />
