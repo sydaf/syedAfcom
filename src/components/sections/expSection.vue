@@ -6,12 +6,12 @@ import GlobeShape from '../svg/GlobeShape.vue';
     <div class="panel panel-exp md:row-span-2 md:col-span-3 md:order-11 order-7 flex flex-col gap-2 relative">
         <h2 class="text-xl">Experience.</h2>
         <div class="first-exp">
-            <p>OSKY Interactive</p>
+            <p>DMSA Global</p>
             <p class="opacity-60">2023 - Present</p>
         </div>
         <div class="second-exp">
-            <p>Sfera Digital Solutions</p>
-            <p class="opacity-60">2020 - 2022</p>
+            <p>OSKY Interactive</p>
+            <p class="opacity-60">2023 - 2025</p>
         </div>
         <div class="absolute right-0 bottom-0">
             <GlobeShape />

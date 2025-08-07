@@ -13,12 +13,14 @@ import Wordpress from '../svg/Wordpress.vue';
 import Yarn from '../svg/Yarn.vue';
 import Gpql from '../svg/Gpql.vue';
 import Nextjs from '../svg/Nextjs.vue';
+import Redux from '../svg/Redux.vue';
 </script>
 
 <template>
     <div class="panel panel-stack md:row-span-1 md:col-span-3 md:order-10 order-6 flex items-center relative">
         <Vue3Marquee :clone="true" :duration="20" :pause-on-hover="true">
             <Bootstrap />
+            <Redux />
             <Git />
             <JavaScript />
             <Jquery />

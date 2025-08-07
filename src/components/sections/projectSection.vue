@@ -4,9 +4,7 @@ import ArrowIcon from "../Arrow.vue";
 </script>
 
 <template>
-  <div
-    class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between"
-  >
+  <div class="panel panel-cvd md:row-span-2 md:col-span-4 md:order-4 order-9 relative flex flex-col justify-between">
     <!-- <div class="absolute top-3 right-3">
             <ArrowIcon :showText="false"/>
           </div> -->
@@ -33,26 +31,26 @@ import ArrowIcon from "../Arrow.vue";
   </div>
 
   <div
-    class="panel panel-naati md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between"
-  >
+    class="panel bg-[#e3b505] md:row-span-2 md:col-span-4 md:order-5 order-10 relative flex flex-col justify-between">
     <div class="absolute top-3 right-3">
-      <a target="_blank" href="https://www.naati.com.au">
+      <a target="_blank" href="https://apps.apple.com/app/escabee-com/id6748956455">
         <ArrowIcon :showText="false" />
       </a>
     </div>
-    <h2>NAATI</h2>
-    <p>Website refresh using Elementor, custom widgets and plugins for easy customization.</p>
+    <h2>ESCABEE</h2>
+    <p>An App for booking campsites in Malaysia</p>
     <div class="flex flex-wrap gap-1">
-      <ProjectTag text="custom-widget" />
-      <ProjectTag text="custom-plugin" />
-      <ProjectTag text="elementor" />
-      <ProjectTag text="wordpress" />
+      <ProjectTag text="react-native" />
+      <ProjectTag text="rest-api" />
+      <ProjectTag text="redux-toolkit" />
+      <ProjectTag text="expo" />
+      <ProjectTag text="android" />
+      <ProjectTag text="ios" />
+      <ProjectTag text="google-auth" />
     </div>
   </div>
 
-  <div
-    class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative"
-  >
+  <div class="panel panel-osky md:row-span-2 md:col-span-4 md:order-8 order-11 flex flex-col justify-between relative">
     <div class="absolute top-3 right-3">
       <a target="_blank" href="https://www.osky.com.au">
         <ArrowIcon :showText="false" />
@@ -68,9 +66,7 @@ import ArrowIcon from "../Arrow.vue";
     </div>
   </div>
 
-  <div
-    class="panel panel-atoda md:row-span-2 md:col-span-4 order-12 flex flex-col justify-between relative"
-  >
+  <div class="panel panel-atoda md:row-span-2 md:col-span-4 order-12 flex flex-col justify-between relative">
     <div class="absolute top-3 right-3">
       <a target="_blank" href="https://panaust.com.au/">
         <ArrowIcon :showText="false" />
