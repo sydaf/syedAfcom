@@ -7,7 +7,7 @@ import GlobeShape from '../svg/GlobeShape.vue';
         <h2 class="text-xl">Experience.</h2>
         <div class="first-exp">
             <p>DMSA Global</p>
-            <p class="opacity-60">2023 - Present</p>
+            <p class="opacity-60">2025 - Present</p>
         </div>
         <div class="second-exp">
             <p>OSKY Interactive</p>
